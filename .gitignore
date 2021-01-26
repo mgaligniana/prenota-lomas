@@ -1,5 +1,7 @@
-captcha_1.png
-captcha_2.png
 venv
 .vscode
 .env
+chromedriver.log
+captcha.png
+screenshot.png
+

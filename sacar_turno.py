@@ -29,7 +29,7 @@ CAPTCHA_FILE_NAME = "captcha.png"
 bot = telegram.Bot(TELEGRAM_BOT_TOKEN)
 
 options = Options()
-options.headless = False
+options.headless = True
 driver = webdriver.Chrome("./chromedriver_linux64/chromedriver", options=options, service_log_path="chromedriver.log")
 
 def wait_and_send_and_fill_captcha():

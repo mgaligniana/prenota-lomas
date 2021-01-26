@@ -94,11 +94,11 @@ if __name__ == "__main__":
     #
 
     # driver.implicitly_wait(0)  # this is not working
-    libre = None
-    while libre is None:
+    libres = []
+    while not libres:
         driver.refresh()
-        libre = driver.find_element_by_css_selector(".calendarCellOpen input")
-    libre.click()
+        libres = driver.find_elements_by_css_selector(".calendarCellOpen input")
+    libres[-1].click()
 
     driver.find_element_by_id("ctl00_ContentPlaceHolder1_acc_Calendario1_repFasce_ctl01_btnConferma").click()
 
